@@ -5,15 +5,21 @@
 }
 
 body {
-    background-color: gray;
+
+}
+
+.sfondo-one {
+    background-color: black;
 }
 
 section {
     height: 90vh;
     width: 80vw;
     margin: 5vh auto;
-    background-color: yellow;
 }
+
+
+/* *****ASIDE***** */
 
 aside {
     height: 100%;
@@ -24,13 +30,18 @@ aside {
 .part-one {
     height: 70px;
     width: 100%;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
 }
 
 .part-two {
     height: 70px;
     width: 100%;
-    background-color: pink;
+    display: flex;
+    align-items: center;
+    background-color: blue;
 }
 
 .part-three {
@@ -43,8 +54,24 @@ aside {
     height: calc(100% - 185px);
     width:100%;
     overflow-y: scroll;
-    background-color: blue;
+    background-color: white;
 }
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contact {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* *****MAIN***** */
 
 main {
     height: 100%;
@@ -55,7 +82,10 @@ main {
 .up {
     height: 70px;
     width: 100%;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
 }
 
 .middle {
@@ -68,5 +98,8 @@ main {
 .down {
     height: 70px;
     width: 100%;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
 }
