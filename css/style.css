@@ -5,5 +5,26 @@
 }
 
 body {
+    background-color: gray;
+}
+
+section {
+    height: 90vh;
+    width: 80vw;
+    margin: 5vh auto;
+    background-color: yellow;
+}
+
+aside {
+    height: 100%;
+    width: 30%;
+    float: left;
     background-color: red;
+}
+
+main {
+    height: 100%;
+    width: 70%;
+    float: left;
+    background-color: blue;
 }
