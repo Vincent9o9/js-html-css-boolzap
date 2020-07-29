@@ -84,8 +84,6 @@ aside {
     width: 80%;
 }
 
-
-
 .part-four {
     height: calc(100% - 185px);
     width:100%;
@@ -93,19 +91,31 @@ aside {
     background-color: white;
 }
 
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-left: 20px;
-}
-
-.contact {
+.cont-1 {
     height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.text-info {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
 }
 
 /* *****MAIN***** */
@@ -139,28 +149,29 @@ main {
     padding: 0 50px;
 }
 
-/* .send-text {
-    height: 80px;
-    width: 150px;
-    border-radius: 10px;
-    margin-top: 20px;
-    background-color: white;
-    float: left;
-    display: flex;
-    align-items: center;
+.message {
+    max-width: 20%;
+    min-width: 30%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
 }
 
-.receive-text {
-    height: 80px;
-    width: 150px;
-    border-radius: 10px;
-    margin-top: 20px;
-    background-color: #d5f9bb;
-    float: right;
-    display: flex;
-    align-items: center;
-} */
+.message-bottom {
+    text-align: right;
+}
 
+.received {
+    background-color: white;
+    float: left;
+    clear: both;
+}
+
+.sent {
+    background-color: #00bfa5;
+    float: right;
+    clear: both;
+}
 
 .down {
     height: 70px;
