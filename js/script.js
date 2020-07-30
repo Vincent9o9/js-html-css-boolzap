@@ -14,5 +14,14 @@ function inviomessaggio(){
     clone.find('.message-text').append(valore);
     clone.find('.message-time').append('16:40');
     $('.chat').append(clone);
-    // setTimeout(rispostaAutomatica,2000);
+    setTimeout(rispostaAutomatica,2000);
 };
+
+function rispostaAutomatica() {
+    var clone2 = $('.template .message').clone();
+    clone2.addClass('received');
+    clone2.find('.message-text').append('OK');
+    clone2.find('.message-time').append('16:40');
+    $('.chat').append(clone2);
+
+}
