@@ -4,6 +4,9 @@ $('#ad-text').keydown(function() {
     }
 });
 
+// $('.cont-1').click(function()
+//     hoverContact();
+// )};
 
 // ****FUNZIONI****
 
@@ -32,3 +35,8 @@ function timeMessage() {
     var m = d.getMinutes();
     return h + ":" + m;
 };
+
+// function hoverContact() {
+//     var active = $('.cont-1.active');
+//     active.removeClass('active');
+// }

@@ -105,6 +105,11 @@ aside {
     border-bottom: 1px solid black;
 }
 
+.cont-1:hover,
+.cont-1.active {
+    background-color: #F0F0F0;
+}
+
 /* .cont-1:active{
     background-color: grey;
 } */
