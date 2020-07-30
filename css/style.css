@@ -105,6 +105,10 @@ aside {
     border-bottom: 1px solid black;
 }
 
+/* .cont-1:active{
+    background-color: grey;
+} */
+
 .mex {
     width: calc(100% - 90px);
 }
