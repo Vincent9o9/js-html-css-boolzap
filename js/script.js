@@ -56,3 +56,17 @@ function hoverContact() {
     $('.middle').eq(position).addClass('active');
 
 };
+
+$('#search-chat').keyup(function(){
+    var testo = $('#search-chat').val().toLowerCase();
+    $('.cont-1').each(function(){
+    var nome = $(this).find('h4').text().toLowerCase();
+
+    if (nome.includes(testo)) {
+        $(this).show();
+    }else {
+        $(this).hide();
+    };
+
+    });
+});
