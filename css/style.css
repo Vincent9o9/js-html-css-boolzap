@@ -158,6 +158,11 @@ main {
     overflow-y: scroll;
     background-color: #e6ddd6;
     padding: 10px 50px;
+    display: none;
+}
+
+.middle.active {
+    display: block;
 }
 
 .message {

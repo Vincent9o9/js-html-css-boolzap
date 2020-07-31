@@ -14,7 +14,7 @@ function inviomessaggio(){
     clone.addClass('sent');
     clone.find('.message-text').append(valore);
     clone.find('.message-time').append(timeMessage);
-    $('.chat').append(clone);
+    $('.middle.active').append(clone);
     $('#ad-text').val('');
     setTimeout(rispostaAutomatica,1000);
 };
@@ -24,7 +24,7 @@ function rispostaAutomatica() {
     clone2.addClass('received');
     clone2.find('.message-text').append('Ok');
     clone2.find('.message-time').append(timeMessage);
-    $('.chat').append(clone2);
+    $('.middle.active').append(clone2);
 
 };
 
@@ -48,7 +48,11 @@ function hoverContact() {
 
     var img = $(this).find('img').attr('src');
     var name = $(this).find('.text-info h4').text();
+    var position = $(this).index();
 
     $('.up').find('img').attr('src', img);
     $('.up').find('.fix h4').text(name);
+    $('.middle').removeClass('active');
+    $('.middle').eq(position).addClass('active');
+
 };
