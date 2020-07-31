@@ -4,6 +4,7 @@ $('#ad-text').keydown(function() {
     }
 });
 
+$('.cont-1').on('click',hoverContact);
 
 // ****FUNZIONI****
 
@@ -14,7 +15,8 @@ function inviomessaggio(){
     clone.find('.message-text').append(valore);
     clone.find('.message-time').append(timeMessage);
     $('.chat').append(clone);
-    setTimeout(rispostaAutomatica,2000);
+    $('#ad-text').val('');
+    setTimeout(rispostaAutomatica,1000);
 };
 
 function rispostaAutomatica() {
@@ -24,18 +26,29 @@ function rispostaAutomatica() {
     clone2.find('.message-time').append(timeMessage);
     $('.chat').append(clone2);
 
-}
+};
 
 function timeMessage() {
     var d = new Date();
-    var h = d.getHours();
-    var m = d.getMinutes();
+    var h = addZero(d.getHours());
+    var m = addZero(d.getMinutes());
     return h + ":" + m;
 };
 
-$('.cont-1').on('click',hoverContact);
+function addZero(numero){
+    if(numero < 10){
+        return '0' + numero;
+    }
+    return numero;
+};
 
 function hoverContact() {
     $('.cont-1').removeClass('active');
     $(this).addClass('active');
-}
+
+    var img = $(this).find('img').attr('src');
+    var name = $(this).find('.text-info h4').text();
+
+    $('.up').find('img').attr('src', img);
+    $('.up').find('.fix h4').text(name);
+};

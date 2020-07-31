@@ -157,7 +157,7 @@ main {
     width: 100%;
     overflow-y: scroll;
     background-color: #e6ddd6;
-    padding: 0 50px;
+    padding: 10px 50px;
 }
 
 .message {
@@ -166,6 +166,7 @@ main {
     border-radius: 5px;
     padding: 10px;
     margin: 2px;
+    word-wrap: break-word;
 }
 
 .message-bottom {
